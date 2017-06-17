@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Mercado Libre</string>
+
+    <string name="consola_producto1">Psn Card Americana 10 Usd Codigo Digital Ps3 Ps4 Psvita</string>
+    <string name="consola_producto2">Control Ps3 Inalámbrico Play Station 3 Dualshock Sixaxis</string>
+    <string name="consola_producto3">Grand Theft Auto 5 Gta V Xbox One. Entrega Inmediata</string>
+    <string name="consola_producto5">Xbox 360+ 500gb+ 2 Controles+carga Y Juega +90 Juegos</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="edit_nombre_usuario">Nombre usuario ó Email</string>
+    <string name="edit_pass">Contraseña</string>
+    <string name="boton_iniciar_sesion">Iniciar sesión</string>
+    <string name="boton_limpiar_productos">Limpiar productos</string>
+
+</resources>

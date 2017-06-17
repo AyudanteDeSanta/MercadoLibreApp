@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="10dp"
+    tools:context="myapp.surfer.com.mercadolibresena.FacturaActivity">
+    <!--<TextView-->
+        <!--android:id="@+id/tvNombreFactura"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="24dp"-->
+        <!--android:text="Factura"-->
+        <!--android:textColor="@android:color/black" />-->
+    <TextView
+        android:id="@+id/tvNombreTotalFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="16dp"
+        android:text="Total productos"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/tvTotalProductosFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Total"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/tvNombrePrecioFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Precio total"
+        android:padding="5dp"
+        android:layout_below="@id/tvNombreTotalFactura"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/tvPrecioFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:padding="5dp"
+        android:layout_below="@id/tvTotalProductosFactura"
+        android:text="Precio"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black" />
+    <Space
+        android:id="@+id/sEspecio1"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignStart="@+id/tvNombrePrecioFactura"
+        android:layout_below="@+id/tvPrecioFactura"
+        android:layout_marginStart="20dp" />
+    <Button
+        android:id="@+id/bt_factura_limpiarProductos"
+        android:layout_below="@+id/tvPrecioFactura"
+        android:text="@string/boton_limpiar_productos"
+        android:layout_centerInParent="true"
+        android:onClick="eliminarProductos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Space
+        android:id="@+id/sEspacio2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignStart="@+id/tvNombrePrecioFactura"
+        android:layout_below="@+id/bt_factura_limpiarProductos"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:id="@+id/tvNombreDetalleFactura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/sEspacio2"
+        android:textSize="24dp"
+        android:text="Productos agregados"
+        android:textColor="@android:color/black" />
+    <Space
+        android:id="@+id/sEspecio2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignStart="@+id/tvNombrePrecioFactura"
+        android:layout_below="@+id/tvNombreDetalleFactura"
+        android:layout_marginStart="20dp" />
+    <ListView
+        android:id="@+id/lvProductosFactura"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/sEspecio2"
+        android:layout_height="wrap_content"></ListView>
+
+
+</RelativeLayout>
